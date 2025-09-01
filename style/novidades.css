@@ -1,0 +1,117 @@
+@import url(./index.css);
+
+#item-nov-1 {
+  grid-area: item-1-nov;
+}
+#item-nov-2 {
+  grid-area: item-2-nov;
+}
+#item-nov-3 {
+  grid-area: item-3-nov;
+}
+#item-nov-4 {
+  grid-area: item-4-nov;
+}
+#item-nov-5 {
+  grid-area: item-5-nov;
+}
+#item-nov-6 {
+  grid-area: item-6-nov;
+}
+#item-nov-7 {
+  grid-area: item-7-nov;
+}
+#item-nov-8 {
+  grid-area: item-8-nov;
+}
+#item-nov-9 {
+  grid-area: item-9-nov;
+}
+
+.novidades-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.novidades-container {
+  display: grid;
+  grid-template-areas:
+    "item-1-nov item-2-nov item-3-nov"
+    "item-4-nov item-5-nov item-6-nov"
+    "item-7-nov item-8-nov item-9-nov";
+
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+  margin-left: 6.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.novidades-container .card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.novidades-container .card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.novidades-container .card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .novidades-container {
+    grid-template-areas:
+      "item-1-nov"
+      "item-2-nov"
+      "item-3-nov"
+      "item-4-nov"
+      "item-5-nov"
+      "item-6-nov"
+      "item-7-nov"
+      "item-8-nov"
+      "item-9-nov";
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+    margin-left: 6.5rem;
+    margin-bottom: 3.5rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .novidades-container {
+    grid-template-areas:
+      "item-1-nov item-2-nov"
+      "item-3-nov item-4-nov"
+      "item-5-nov item-6-nov"
+      "item-7-nov item-8-nov"
+      "item-9-nov .";
+    gap: 2rem;
+    margin-top: 2.5rem;
+    margin-left: 6.5rem;
+    margin-bottom: 3.5rem;
+  }
+}
+
+@media (min-width: 1201px) {
+  .novidades-container {
+    grid-template-areas:
+      "item-1-nov item-2-nov item-3-nov"
+      "item-4-nov item-5-nov item-6-nov"
+      "item-7-nov item-8-nov item-9-nov";
+    gap: 2rem;
+    margin-top: 2.5rem;
+    margin-left: 6.5rem;
+    margin-bottom: 3.5rem;
+  }
+}

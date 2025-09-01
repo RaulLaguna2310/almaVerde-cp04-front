@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+}
+
+.nav-item {
+  font-size: larger;
+  font-weight: 500;
+}
+
+a:hover {
+  color: green !important;
+}
+
+.titulo-container {
+  flex: display;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+.titulo {
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.subtitulo {
+  text-align: center;
+  font-size: large;
+  font-weight: 500;
+  color: green;
+}
+
+.section-title-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 5rem;
+  margin-left: 3.5rem;
+}
+
+#item-1 {
+  grid-area: item-1;
+}
+#item-2 {
+  grid-area: item-2;
+}
+#item-3 {
+  grid-area: item-3;
+}
+#item-4 {
+  grid-area: item-4;
+}
+#item-5 {
+  grid-area: item-5;
+}
+#item-6 {
+  grid-area: item-6;
+}
+
+.card {
+    max-width: 100%;
+    width: 62% !important;
+}
+/* Adicionado para efeito de hover nos cards */
+.produtos-container .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#carouselExampleDark {
+    margin-top: 2.5rem;
+}
+
+/* Garantir que todas as imagens do carrossel tenham o mesmo tamanho e sejam ajustadas proporcionalmente */
+#carouselExampleDark .carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Adicionado fundo opaco aos textos do carrossel */
+#carouselExampleDark .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: white;
+
+        h5{
+            color: rgb(136, 238, 136);
+        }
+}
+
+/* Breakpoint Mobile */
+@media (max-width: 768px) {
+  .produtos-container {
+    display: grid;
+    grid-template-areas:
+      "item-1"
+      "item-2"
+      "item-3"
+      "item-4"
+      "item-5"
+      "item-6";
+    gap: 2rem;
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+  }
+}
+
+/* Breakpoint Tablet e afins */
+@media (min-width: 769px) and (max-width: 999px) {
+  .produtos-container {
+    display: grid;
+    grid-template-areas:
+      "item-1 item-2"
+      "item-3 item-4"
+      "item-5 item-6";
+    gap: 2rem;
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+  }
+}
+
+/* Breakpoint Web */
+@media (min-width: 1000px) {
+  .produtos-container {
+    display: grid;
+    grid-template-areas:
+      "item-1 item-2 item-3"
+      "item-4 item-5 item-6";
+    row-gap: 2.5rem;
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+  }
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto 1fr auto;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer {
+    width: 100%;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    background-color: hsl(133, 100%, 89%);
+    color: #212529;
+    text-align: center;
+    border-top: 1px solid hsl(133, 93%, 83%);
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
