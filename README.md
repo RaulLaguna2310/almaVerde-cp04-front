@@ -36,3 +36,4 @@ Certifique-se de ter instalado:
 ```bash
 git clone https://github.com/seuusuario/alma-verde.git
 cd alma-verde
+code .
