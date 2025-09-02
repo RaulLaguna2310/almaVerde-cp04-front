@@ -256,3 +256,26 @@ main {
 footer {
     grid-area: footer;
 }
+
+.container {
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
