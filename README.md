@@ -2,6 +2,11 @@
 
 Site institucional e de e-commerce focado em **produtos de beleza e higiene naturais**. Nosso objetivo é oferecer alternativas sustentáveis, seguras e saudáveis para o cuidado pessoal.  
 
+## Integrantes do grupo:
+- Raul Laguna, RM: 562684
+- Piettra Sattolo, RM: 562538
+- Pedro Gomes, RM: 563191
+
 ## Tecnologias utilizadas  
 - **HTML5**  
 - **CSS3**  
@@ -32,7 +37,7 @@ Certifique-se de ter instalado:
 
 ## Como rodar o projeto  
 
-### 1. Clonar o repositório  
+### Clonar o repositório  
 ```bash
 git clone https://github.com/seuusuario/alma-verde.git
 cd alma-verde
