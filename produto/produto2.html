@@ -1,28 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./style/index.css" />
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../style/index.css" />
     <link rel="stylesheet" href="../style/produto.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Nata+Sans:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Detalhes do Produto</title>
-</head>
-<body>
-    <div class="breadcrumb">
-        <a href="../index.html">Página Inicial</a> / <a href="#">Categoria</a> / <a href="#">Produto</a>
-    </div>
-    <div class="container">
-        <div class="product-details">
-            <div class="product-images">
-                <img src="https://imgs.search.brave.com/ppvLxDSPVHQmKZq5M6uAHB74hU28eRGFqFuth_ORZVE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sb2ph/bGVtaXMuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDI0LzA1/LzEyMTc3Ny10cmF5/LTEtMTAwMHgxMDAw/LTEuanBn" alt="Imagem do Produto" class="main-image">
-            </div>
-            <div class="product-info">
-                <h1>Nome do Produto</h1>
-                <p class="description">Descrição detalhada do produto. Este produto é feito com materiais de alta qualidade e é ideal para uso diário.</p>
-                <p class="price"><strong>Preço:</strong> R$ 99,99</p>
-                <button class="btn btn-primary">Comprar</button>
-            </div>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-gray">
+        <div class="container-fluid" style="gap: 2rem">
+          <a class="navbar-brand" href="../index.html">
+            <img
+              src="../assets/logo.png"
+              alt="Alma Verde Logo"
+              width="150"
+              height="150"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0"
+              style="gap: 1rem"
+              id="lista-nav"
+            >
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../pages/novidades.html">Novidades</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre Nós</a>
+              </li>
+            </ul>
+            <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+          </div>
         </div>
+      </nav>
+    </header>
+    <main>
+        <div class="container">
+      <div class="product-details">
+        <div class="product-images">
+          <img
+            src="https://imgs.search.brave.com/ppvLxDSPVHQmKZq5M6uAHB74hU28eRGFqFuth_ORZVE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sb2ph/bGVtaXMuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDI0LzA1/LzEyMTc3Ny10cmF5/LTEtMTAwMHgxMDAw/LTEuanBn"
+            alt="Imagem do Produto"
+            class="main-image"
+          />
+        </div>
+        <div class="product-info">
+          <div class="product-header">
+            <h1>Hidratante Corporal de Manteiga de Karité</h1>
+            <button class="favorite-btn" title="Adicionar aos favoritos">
+              <svg
+                class="heart-icon"
+                viewBox="0 0 24 24"
+                width="28"
+                height="28"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M20.8 4.6c-1.5-1.4-3.9-1.4-5.4 0l-.9.9-.9-.9c-1.5-1.4-3.9-1.4-5.4 0-1.6 1.5-1.6 4 0 5.5l6.3 6.2 6.3-6.2c1.6-1.5 1.6-4 0-5.5z"
+                  fill="#fff"
+                  stroke="#e53935"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="rating">
+            <span class="stars">
+              <svg viewBox="0 0 20 20" width="20" height="20" fill="#FFD700">
+                <polygon
+                  points="10,1 12.59,6.99 19,7.64 14,12.26 15.18,18.51 10,15.27 4.82,18.51 6,12.26 1,7.64 7.41,6.99"
+                />
+              </svg>
+              <svg viewBox="0 0 20 20" width="20" height="20" fill="#FFD700">
+                <polygon
+                  points="10,1 12.59,6.99 19,7.64 14,12.26 15.18,18.51 10,15.27 4.82,18.51 6,12.26 1,7.64 7.41,6.99"
+                />
+              </svg>
+              <svg viewBox="0 0 20 20" width="20" height="20" fill="#FFD700">
+                <polygon
+                  points="10,1 12.59,6.99 19,7.64 14,12.26 15.18,18.51 10,15.27 4.82,18.51 6,12.26 1,7.64 7.41,6.99"
+                />
+              </svg>
+              <svg viewBox="0 0 20 20" width="20" height="20" fill="#FFD700">
+                <polygon
+                  points="10,1 12.59,6.99 19,7.64 14,12.26 15.18,18.51 10,15.27 4.82,18.51 6,12.26 1,7.64 7.41,6.99"
+                />
+              </svg>
+              <svg viewBox="0 0 20 20" width="20" height="20" fill="#FFD700">
+                <polygon
+                  points="10,1 12.59,6.99 19,7.64 14,12.26 15.18,18.51 10,15.27 4.82,18.51 6,12.26 1,7.64 7.41,6.99"
+                />
+              </svg>
+            </span>
+            <span class="rating-count">(8938)</span>
+          </div>
+          <p class="description">
+            Fortalece os fios, estimula o crescimento e reduz a oleosidade sem
+              agredir o couro cabeludo.
+          </p>
+          <p class="price"><strong>Preço:</strong> R$ 29,90</p>
+          <button class="btn btn-primary">Comprar</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container-footer p-4">
+        <p class="mb-0">
+          © 2025 Alma Verde - Produtos de Beleza Naturais e Sustentáveis.
+        </p>
+        <p class="mb-0">Contato: contato@almaverde.com | (11) 99999-9999</p>
+      </div>
+    </footer>
     </div>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

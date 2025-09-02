@@ -279,3 +279,54 @@ footer {
 .btn-primary:hover {
     background-color: #0056b3;
 }
+
+/* Centralize the aside element */
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/* Centralize the card inside the aside and update its styling */
+aside .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  border: 2px solid #28a745;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+aside .card h2 {
+  font-size: 1.8rem;
+  color: #155724;
+  margin-bottom: 1rem;
+}
+
+aside .card h6 {
+  font-size: 1.2rem;
+  color: #6c757d;
+  margin-bottom: 0.5rem;
+}
+
+aside .card .form-check {
+  margin-bottom: 0.8rem;
+}
+
+aside .card button {
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+aside .card button:hover {
+  background-color: #218838;
+}
